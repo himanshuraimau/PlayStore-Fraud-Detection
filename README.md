@@ -104,11 +104,3 @@ See [Performance Metrics](docs/metrics.md) for detailed explanation of each metr
 ## Contributing
 
 Please see our [Development Guide](docs/development_guide.md) for information on contributing to this project.
-
-## License
-
-[Include your license information here]
-
-## Contact
-
-[Include contact information here]
