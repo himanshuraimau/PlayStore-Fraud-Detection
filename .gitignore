@@ -12,8 +12,7 @@ wheels/
 # Environment files
 .env
 
-# Output files
-data/output/
+
 
 # IDE files
 .vscode/
