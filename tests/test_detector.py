@@ -100,9 +100,11 @@ def test_load_json_data():
     with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.json') as tmp:
         test_data = [{"appId": "test1"}, {"appId": "test2"}]
         json.dump(test_data, tmp)
+        tmp.flush()  # Ensure data is written to disk
         tmp_name = tmp.name
     
     try:
+        # File is now closed and data is flushed to disk
         loaded_data = load_json_data(tmp_name)
         assert len(loaded_data) == 2
         assert loaded_data[0]["appId"] == "test1"

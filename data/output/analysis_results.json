@@ -1,0 +1,32 @@
+[
+    {
+        "type": "genuine",
+        "reason": "The app is a legitimate Google product with permissions that align with its gaming functionality. Developer is reputable. No fraud indicators detected.",
+        "app_id": "com.google.android.play.games",
+        "app_title": "Google Play Games"
+    },
+    {
+        "type": "suspected",
+        "reason": "The app requests read access to USB storage, which is excessive for a word search game. This, combined with other permissions like preventing the device from sleeping, raises suspicion.",
+        "app_id": "in.playsimple.wordsearch",
+        "app_title": "Word Search Explorer"
+    },
+    {
+        "type": "suspected",
+        "reason": "The app requests full network access and Wi-Fi connection information despite being advertised as an offline game. The developer's privacy policy is a generic Iubenda link, and the legal address is a residential address, raising slight suspicion.",
+        "app_id": "com.JindoBlu.OfflineGames",
+        "app_title": "Offline Games - No Wifi Games"
+    },
+    {
+        "type": "genuine",
+        "reason": "App description aligns with the arcade category and gameplay. Permissions are standard for this type of game. Developer has a privacy policy and contact email. Reviews are positive with no suspicious patterns detected.",
+        "app_id": "com.kiloo.subwaysurf",
+        "app_title": "Subway Surfers"
+    },
+    {
+        "type": "genuine",
+        "reason": "App description aligns with arcade category. Permissions are standard for game functionality (storage for game data, network for ads/updates). Developer has a privacy policy and address, suggesting legitimacy. Reviews are positive.",
+        "app_id": "com.robtopx.geometryjumplite",
+        "app_title": "Geometry Dash Lite"
+    }
+]

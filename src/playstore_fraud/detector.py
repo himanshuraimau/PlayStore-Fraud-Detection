@@ -2,32 +2,18 @@ import json
 import os
 import sys
 import logging
+import time
 from typing import Dict, List, Any, Tuple, Optional
-import google.generativeai as genai # type: ignore
 
-# Fix the import paths to use the correct module structure
+# Import our modular components
 from src.playstore_fraud.utils.io_utils import load_json_data, save_results
 from src.playstore_fraud.config.logging_config import setup_logging
 from src.playstore_fraud.api.playstore_client import PlayStoreClient
+from src.playstore_fraud.analysis.app_analyzer import preprocess_app_data
+from src.playstore_fraud.analysis.llm_analyzer import LLMAnalyzer
 
 # Setup logging
 logger = setup_logging('FraudDetectionSystem')
-
-# List of permissions considered dangerous
-DANGEROUS_PERMISSIONS = [
-    "android.permission.READ_CONTACTS",
-    "android.permission.ACCESS_FINE_LOCATION",
-    "android.permission.RECORD_AUDIO",
-    "android.permission.CAMERA",
-    "android.permission.READ_SMS",
-    "android.permission.SEND_SMS",
-    "android.permission.CALL_PHONE",
-    "android.permission.READ_CALL_LOG",
-    "android.permission.READ_EXTERNAL_STORAGE",
-    "android.permission.WRITE_EXTERNAL_STORAGE",
-    "android.permission.GET_ACCOUNTS",
-    "android.permission.READ_PHONE_STATE"
-]
 
 class PlayStoreFraudDetector:
     def __init__(self, api_key: str, model_name: str = "gemini-2.0-flash"):
@@ -40,209 +26,37 @@ class PlayStoreFraudDetector:
         """
         self.api_key = api_key
         self.model_name = model_name
-        self.initialize_llm()
-        self.playstore_client = PlayStoreClient()
+        self.llm_analyzer = LLMAnalyzer(api_key, model_name)
+        self.playstore_client = None  # Initialize only when needed
         logger.info(f"Fraud Detection System initialized with {model_name}")
+    
+    def load_app_data(self, file_path: str = "data/input/input.json") -> List[Dict]:
+        """
+        Load app data from a JSON file
         
-    def initialize_llm(self):
-        """Configure the LLM client"""
+        Args:
+            file_path: Path to the JSON file with app data
+            
+        Returns:
+            List of app data dictionaries
+        """
         try:
-            genai.configure(api_key=self.api_key)
-            self.model = genai.GenerativeModel(self.model_name)
-            logger.info("LLM configured successfully")
-        except Exception as e:
-            logger.error(f"Failed to initialize LLM: {str(e)}")
-            sys.exit(1)
-
-    def preprocess_app_data(self, app_data: Dict) -> Dict:
-        """
-        Preprocess app data for analysis
-        
-        Args:
-            app_data: App data from JSON files
-            
-        Returns:
-            Processed app data with extracted features
-        """
-        processed_data = {
-            "app_id": app_data.get("appId", "unknown"),
-            "title": app_data.get("title", ""),
-            "description": app_data.get("description", "")[:1000] if app_data.get("description") else "",
-            "category": app_data.get("category", ""),
-            "price": app_data.get("price", 0),
-            "developer": app_data.get("developer", {}),
-            "content_rating": app_data.get("contentRating", ""),
-            "reviews": self._process_reviews(app_data.get("reviews", [])),
-            "permissions": app_data.get("permissions", []),
-            "suspicious_indicators": self._extract_suspicious_indicators(app_data)
-        }
-        
-        logger.info(f"Preprocessed data for app: {processed_data['app_id']}")
-        return processed_data
-    
-    def _process_reviews(self, reviews: List[Dict]) -> Dict:
-        """Process and analyze app reviews"""
-        if not reviews:
-            return {"available": False}
-            
-        total_reviews = len(reviews)
-        if total_reviews == 0:
-            return {"available": False}
-            
-        # Calculate average rating
-        avg_rating = sum(r.get("score", 0) for r in reviews) / total_reviews
-        
-        # Check for review patterns
-        five_star_count = sum(1 for r in reviews if r.get("score") == 5)
-        one_star_count = sum(1 for r in reviews if r.get("score") == 1)
-        
-        # Calculate suspicious patterns
-        suspicious_patterns = {}
-        if total_reviews > 10:
-            if five_star_count / total_reviews > 0.9:
-                suspicious_patterns["excessive_five_stars"] = True
-            if len(set(r.get("text", "")[:20] for r in reviews)) < total_reviews * 0.5:
-                suspicious_patterns["similar_review_texts"] = True
+            full_path = os.path.join(os.getcwd(), file_path)
+            if not os.path.exists(full_path):
+                logger.error(f"File not found: {full_path}")
+                return []
                 
-        return {
-            "available": True,
-            "count": total_reviews,
-            "average_rating": avg_rating,
-            "five_star_percentage": five_star_count / total_reviews if total_reviews > 0 else 0,
-            "one_star_percentage": one_star_count / total_reviews if total_reviews > 0 else 0,
-            "suspicious_patterns": suspicious_patterns
-        }
-    
-    def _count_dangerous_permissions(self, app_data: Dict) -> Dict:
-        """Count and analyze dangerous permissions"""
-        permissions = app_data.get("permissions", [])
-        dangerous_count = sum(1 for p in permissions if p in DANGEROUS_PERMISSIONS)
-        
-        result = {
-            "total": len(permissions),
-            "dangerous_count": dangerous_count,
-            "dangerous_ratio": dangerous_count / len(permissions) if len(permissions) > 0 else 0
-        }
-        
-        # Add specific dangerous permissions found
-        result["dangerous_found"] = [p for p in permissions if p in DANGEROUS_PERMISSIONS]
-        
-        return result
-    
-    def _analyze_developer_history(self, developer_data: Dict) -> Dict:
-        """Analyze developer information for suspicious patterns"""
-        result = {}
-        
-        # Check for missing critical information
-        if not developer_data.get("email"):
-            result["missing_contact_email"] = True
-            
-        if not developer_data.get("website"):
-            result["missing_website"] = True
-            
-        if not developer_data.get("privacyPolicy"):
-            result["missing_privacy_policy"] = True
-            
-        # Optionally fetch developer's other apps using the PlayStore API
-        # This would be implemented with real API integration
-        developer_id = developer_data.get("id")
-        if developer_id:
-            try:
-                # Mock implementation - in a real system, this would call the API
-                developer_apps = self.playstore_client.get_developer_apps(developer_id)
-                result["app_count"] = len(developer_apps)
-                result["new_developer"] = result["app_count"] < 3
-            except Exception as e:
-                logger.warning(f"Failed to get developer history: {str(e)}")
-                result["developer_history_available"] = False
-        
-        return result
-
-    def _extract_suspicious_indicators(self, app_data: Dict) -> Dict:
-        """Extract potential indicators of suspicious activity"""
-        indicators = {}
-        
-        # Analyze permissions
-        permission_analysis = self._count_dangerous_permissions(app_data)
-        indicators["dangerous_permissions"] = permission_analysis
-        
-        # If dangerous permissions ratio is high, flag it
-        if permission_analysis["dangerous_ratio"] > 0.4:
-            indicators["excessive_dangerous_permissions"] = True
-            
-        # Developer analysis
-        developer_analysis = self._analyze_developer_history(app_data.get("developer", {}))
-        indicators["developer_issues"] = developer_analysis
-        
-        # Price analysis
-        if app_data.get("price", 0) > 0 and app_data.get("category") == "Finance":
-            indicators["paid_finance_app"] = True
-            
-        # Add more indicators based on patterns identified
-        
-        return indicators
-
-    def generate_llm_prompt(self, app_data: Dict) -> str:
-        """
-        Create a prompt for the LLM based on app data
-        
-        Args:
-            app_data: Processed app data
-            
-        Returns:
-            Formatted prompt string
-        """
-        prompt = f"""
-        Analyze this Google Play Store app for potential fraud indicators or harmful behavior.
-
-        App Title: {app_data['title']}
-        App Category: {app_data['category']}
-        Price: {app_data['price']}
-        Content Rating: {app_data['content_rating']}
-
-        Description:
-        {app_data['description']}
-
-        Developer Info:
-        {json.dumps(app_data['developer'], indent=2)}
-
-        Permissions:
-        {json.dumps(app_data['permissions'], indent=2)}
-
-        Review Analysis:
-        {json.dumps(app_data['reviews'], indent=2)}
-
-        Suspicious indicators already identified:
-        {json.dumps(app_data['suspicious_indicators'], indent=2)}
-
-        Analyze for these common fraud patterns:
-        - Misleading descriptions vs. actual functionality
-        - Excessive permissions relative to stated purpose
-        - Developer with suspicious patterns (new account, no website, etc.)
-        - Financial/crypto apps with high fees or vague value propositions
-        - Clone apps mimicking popular apps with slight name variations
-        - Apps requesting sensitive permissions without clear justification
-
-        Based on this information:
-        1. Evaluate the consistency between app description and category
-        2. Assess if permissions requested match the stated functionality
-        3. Check developer credibility indicators
-        4. Identify patterns matching known financial scams or malware
-        5. Analyze review patterns for authenticity
-
-        Respond with a JSON object ONLY in this exact format:
-        {{
-            "type": "fraud" | "genuine" | "suspected",
-            "reason": "<concise explanation in less than 300 characters>"
-        }}
-
-        Your analysis should be thorough but the output must match the exact format specified.
-        """
-        return prompt
+            logger.info(f"Loading app data from {full_path}")
+            data = load_json_data(full_path)
+            logger.info(f"Loaded {len(data)} apps from {file_path}")
+            return data
+        except Exception as e:
+            logger.error(f"Error loading app data: {str(e)}")
+            return []
 
     def analyze_app(self, app_data: Dict) -> Dict:
         """
-        Analyze a single app using LLM
+        Analyze a single app
         
         Args:
             app_data: App data to analyze
@@ -251,32 +65,11 @@ class PlayStoreFraudDetector:
             Analysis result in the required format
         """
         try:
-            processed_data = self.preprocess_app_data(app_data)
-            prompt = self.generate_llm_prompt(processed_data)
+            # Preprocess the app data
+            processed_data = preprocess_app_data(app_data)
             
-            # Call LLM API with structured output
-            generation_config = {
-                "temperature": 0.2,
-                "top_p": 0.8,
-                "top_k": 40,
-                "response_mime_type": "application/json",
-                "candidate_count": 1,
-            }
-            
-            response = self.model.generate_content(
-                prompt, 
-                generation_config=generation_config
-            )
-            
-            result = json.loads(response.text)
-            
-            # Validate result format
-            if not self._validate_result_format(result):
-                logger.warning(f"Invalid result format for app {processed_data['app_id']}, using fallback")
-                result = {
-                    "type": "suspected",
-                    "reason": "Analysis produced invalid format. Manual review recommended."
-                }
+            # Use the LLM analyzer to get fraud assessment
+            result = self.llm_analyzer.analyze_app(processed_data)
             
             logger.info(f"Analysis complete for {processed_data['app_id']}: {result['type']}")
             return result
@@ -288,32 +81,26 @@ class PlayStoreFraudDetector:
                 "reason": "Error during analysis. Manual review recommended."
             }
     
-    def _validate_result_format(self, result: Dict) -> bool:
-        """Validate that the result matches the required format"""
-        if not isinstance(result, dict):
-            return False
-            
-        if "type" not in result or "reason" not in result:
-            return False
-            
-        if result["type"] not in ["fraud", "genuine", "suspected"]:
-            return False
-            
-        if not isinstance(result["reason"], str) or len(result["reason"]) > 300:
-            return False
-            
-        return True
-    
-    def batch_analyze(self, apps_data: List[Dict]) -> List[Dict]:
+    def batch_analyze(self, apps_data: List[Dict] = None, file_path: str = None) -> List[Dict]:
         """
         Analyze multiple apps
         
         Args:
-            apps_data: List of app data to analyze
+            apps_data: List of app data to analyze or None to load from file
+            file_path: Path to JSON file with app data (if apps_data is None)
             
         Returns:
             List of analysis results
         """
+        if apps_data is None:
+            if file_path is None:
+                file_path = "data/input/input.json"
+            apps_data = self.load_app_data(file_path)
+            
+        if not apps_data:
+            logger.error("No app data available for analysis")
+            return []
+            
         results = []
         total = len(apps_data)
         
@@ -328,3 +115,116 @@ class PlayStoreFraudDetector:
             results.append(result)
             
         return results
+    
+    def sequential_workflow(self, query: str, top_n: int = 5):
+        """
+        Executes a clear sequential workflow:
+        1. First uses PlayStoreClient to scrape data and save to input.json
+        2. Then loads that data and performs fraud detection analysis
+        
+        Args:
+            query: Search query for app scraping
+            top_n: Number of apps to scrape and analyze
+            
+        Returns:
+            Analysis results
+        """
+        logger.info(f"Starting sequential workflow for query: '{query}'")
+        
+        # STEP 1: Data Collection
+        logger.info("====== STEP 1: SCRAPING DATA ======")
+        self.playstore_client = PlayStoreClient(query=query, top_n=top_n)
+        apps_data = self.playstore_client.fetch_all_apps()
+        
+        # Check if we found any apps
+        if not apps_data:
+            logger.error(f"No apps found for query '{query}'. Please try a different search term.")
+            return []
+            
+        input_path = "data/input/input.json"
+        self.playstore_client.save_to_json(input_path)
+        logger.info(f"Data collection complete. {len(apps_data)} apps saved to {input_path}")
+        
+        # Add a small delay to ensure file is completely written
+        time.sleep(2)
+        
+        # STEP 2: Fraud Detection
+        logger.info("====== STEP 2: PERFORMING FRAUD DETECTION ======")
+        # Load fresh data from the file to ensure we're using exactly what was saved
+        logger.info(f"Loading saved data from {input_path}")
+        results = self.batch_analyze(file_path=input_path)
+        
+        # Save results
+        output_path = "data/output/analysis_results.json"
+        save_results(results, output_path)
+        logger.info(f"Analysis complete. Results saved to {output_path}")
+        
+        # Print summary
+        fraud_count = sum(1 for r in results if r.get("type") == "fraud")
+        suspected_count = sum(1 for r in results if r.get("type") == "suspected")
+        genuine_count = sum(1 for r in results if r.get("type") == "genuine")
+        
+        logger.info("====== WORKFLOW COMPLETE ======")
+        logger.info(f"Summary of {len(results)} apps analyzed:")
+        logger.info(f"- Fraud: {fraud_count}")
+        logger.info(f"- Suspected: {suspected_count}")
+        logger.info(f"- Genuine: {genuine_count}")
+        
+        return results
+
+# Add a simple command-line interface to run the sequential workflow
+if __name__ == "__main__":
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='PlayStore Fraud Detection System')
+    parser.add_argument('--api_key', required=True, help='API Key for Google Gemini')
+    parser.add_argument('--query', help='Search query for Play Store (if not provided, will prompt for input)')
+    parser.add_argument('--top_n', type=int, help='Number of apps to analyze')
+    parser.add_argument('--model', default="gemini-2.0-flash", help='LLM model name')
+    
+    args = parser.parse_args()
+    
+    # If query not provided, ask user for input
+    if not args.query:
+        from src.playstore_fraud.api.playstore_client import PlayStoreClient
+        
+        # Reuse the query input function from PlayStoreClient
+        def get_user_query():
+            """Ask user for app category to query"""
+            print("Welcome to PlayStore Fraud Detection System")
+            print("-" * 40)
+            print("What type of apps would you like to analyze for potential fraud?")
+            print("Examples: business, finance, games, social, education, etc.")
+            query = input("Enter app category/query: ").strip()
+            
+            if not query:
+                print("Using default query 'finance'")
+                return "finance"
+            
+            # Ask for number of apps to fetch
+            try:
+                top_n = int(input("How many apps would you like to analyze? [5]: ") or "5")
+            except ValueError:
+                print("Invalid input. Using default (5 apps)")
+                top_n = 5
+                
+            return query, top_n
+        
+        # Get user input
+        query_input = get_user_query()
+        
+        # Check if we got a tuple (with all parameters) or just a string (query only)
+        if isinstance(query_input, tuple):
+            query, top_n = query_input
+        else:
+            query, top_n = query_input, 5
+    else:
+        query = args.query
+        top_n = args.top_n or 5
+    
+    # Create detector and run sequential workflow
+    detector = PlayStoreFraudDetector(api_key=args.api_key, model_name=args.model)
+    results = detector.sequential_workflow(query=query, top_n=top_n)
+    
+    print(f"\nAnalysis complete! Checked {len(results)} apps.")
+    print(f"Results saved to data/output/analysis_results.json")

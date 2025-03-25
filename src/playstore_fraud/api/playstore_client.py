@@ -15,7 +15,7 @@ class PlayStoreClient:
     
     def __init__(
         self, 
-        query: str = "finance", 
+        query: str = "buisness", 
         country: str = "us", 
         lang: str = "en", 
         top_n: int = 5, 
@@ -56,12 +56,28 @@ class PlayStoreClient:
     def search_apps(self):
         """Fetch the top search results based on query."""
         logger.info(f"Searching for '{self.query}' apps in {self.country}")
-        return search(
-            self.query, 
-            n_hits=self.top_n, 
-            lang=self.lang, 
-            country=self.country
-        )
+        try:
+            results = search(
+                self.query, 
+                n_hits=self.top_n, 
+                lang=self.lang, 
+                country=self.country
+            )
+            
+            # Check if we got any results
+            if not results:
+                logger.warning(f"No results found for query '{self.query}'. Check your spelling or try a different search term.")
+                # Try with a fix for common misspellings
+                if self.query == "buisness":
+                    logger.info("Attempting to fix misspelling: 'buisness' -> 'business'")
+                    self.query = "business"
+                    return self.search_apps()  # Retry with corrected spelling
+                
+            return results or []  # Return empty list if None
+            
+        except Exception as e:
+            logger.error(f"Error searching for apps: {e}")
+            return []  # Return empty list on error
     
     def get_app_details(self, package_name: str):
         """Fetch detailed app information."""
@@ -210,6 +226,10 @@ class PlayStoreClient:
         search_results = self.search_apps()
         self.apps_data = []
         
+        if not search_results:
+            logger.warning(f"No search results found for '{self.query}'. Check spelling or try another query.")
+            return self.apps_data
+        
         for i, result in enumerate(search_results):
             app_data = self.process_app(result, i)
             self.apps_data.append(app_data)
@@ -236,6 +256,44 @@ class PlayStoreClient:
 
 # Example usage
 if __name__ == "__main__":
-    client = PlayStoreClient(query="finance", top_n=5, review_count=5)
+    def get_user_query():
+        """Ask user for app category to query"""
+        print("Welcome to PlayStore App Analyzer")
+        print("-" * 35)
+        print("What type of apps would you like to analyze?")
+        print("Examples: business, finance, games, social, education, etc.")
+        query = input("Enter app category/query: ").strip()
+        
+        if not query:
+            print("Using default query 'business'")
+            return "business"
+        
+        # Ask for number of apps to fetch
+        try:
+            top_n = int(input("How many apps would you like to analyze? [5]: ") or "5")
+        except ValueError:
+            print("Invalid input. Using default (5 apps)")
+            top_n = 5
+            
+        # Ask for number of reviews per app
+        try:
+            review_count = int(input("How many reviews per app would you like to fetch? [5]: ") or "5")
+        except ValueError:
+            print("Invalid input. Using default (5 reviews)")
+            review_count = 5
+            
+        return query, top_n, review_count
+
+    # Get user input
+    query_input = get_user_query()
+    
+    # Check if we got a tuple (with all parameters) or just a string (query only)
+    if isinstance(query_input, tuple):
+        query, top_n, review_count = query_input
+    else:
+        query, top_n, review_count = query_input, 5, 5
+    
+    client = PlayStoreClient(query=query, top_n=top_n, review_count=review_count)
     client.fetch_all_apps()
     client.save_to_json()
+    print(f"\nAnalysis complete! Data saved to data/input/input.json")

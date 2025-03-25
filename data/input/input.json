@@ -1,0 +1,907 @@
+[
+    {
+        "appId": "com.google.android.play.games",
+        "categories": [
+            {
+                "name": "Entertainment",
+                "id": "ENTERTAINMENT",
+                "_id": "01com.go"
+            }
+        ],
+        "category": "Entertainment",
+        "categoryId": "ENTERTAINMENT",
+        "contentRating": "Teen",
+        "currency": null,
+        "description": "Games are more fun with the Google Play Games app. We'll help you find your next favorite game – from action to puzzles. And with \"Instant play,\" many games require no installation. Really. Save your progress and track your achievements as you level up. Plus, you can pick up where you left off from any device.\r\n\r\nKEY FEATURES\r\n• <b>Instant play:</b> There’s no installation needed – look for the \"Instant play\" button to instantly play full games.\r\n• <b>Built-in Google games:</b> Play Solitaire, Minesweeper, Snake, PAC-MAN, Cricket, and Whirlybird – even when you’re offline.\r\n• <b>Save your progress:</b> Your progress is automatically saved to the cloud when you see \"Progress saved by Play Games.\"\r\n• <b>Gamer profile:</b> Create a custom gamer ID, unlock achievements, earn XP, and level up.\r\n• <b>Gameplay recording:</b> Easily record and share your best gameplay moments.",
+        "developer": {
+            "name": "Google LLC",
+            "id": "5700313618786177705",
+            "internalId": "5700313618786177705",
+            "email": "googleplay-support@google.com",
+            "privacyPolicy": "http://www.google.com/policies/privacy",
+            "legalName": "Google LLC",
+            "legalEmail": "googleplay-support@google.com",
+            "legalAddress": "1600 Amphitheatre Parkway, Mountain View 94043"
+        },
+        "features": {
+            "isEditorChoice": null,
+            "hasAds": true,
+            "isPreregister": null,
+            "isEarlyAccess": null,
+            "isPlayPassAvailable": null,
+            "requiredFeatures": []
+        },
+        "hasInAppPurchases": false,
+        "headerImage": "https://play-lh.googleusercontent.com/9gOTPuX04WeVNByX9Z1n6T2k11lS3Ds8w7wEX1VQo_lXQ7q1lHEHHkEcUeGTyeGgL0Y7",
+        "icon": "https://play-lh.googleusercontent.com/wpRQkfqbkPztp1US6HDr8E41We8GyY-B4CG1PMmWI3WKDk9OeYh4ehXwKIfZB7dm-sc",
+        "isFree": true,
+        "media": {
+            "screenshots": [
+                "https://play-lh.googleusercontent.com/dgCFKTzpARJ4D6E5h57fZemTMZIORsUVbqlpYmHTkkB_7AvWfYYT_fC9cmwkKokb_w",
+                "https://play-lh.googleusercontent.com/tHb1SptYwvx31Z1u0wZNoDMdvGgiad7XAc-4bMrRQhsL_RZ32xuDwgl-f6EjBrh_HA",
+                "https://play-lh.googleusercontent.com/y6ltyTeFZ6e-Us2LFsHmYxUhaBIaai9MetTimiBSFa1F-hvfJ6ke8ctGEqou9fyRxew",
+                "https://play-lh.googleusercontent.com/rmms0IzdCTsM3ZJ_STSunDEGTyKFuW21Tjcat82lYXGGqceBXcwLmUobuJuZT1Q5bz6S",
+                "https://play-lh.googleusercontent.com/O3ETBPNnIYA0ZTrVKIS0a448qIleEQwRWo8-8wdnY9bmRULjO7LFMzRy3vmnooAh6xY",
+                "https://play-lh.googleusercontent.com/_v9OS2XiXX5H5cjfmxUticHXv7jbJMyai6NC1BRqwJlApYMvpo7uOGAIw0h5a6ohFVi5",
+                "https://play-lh.googleusercontent.com/xN2bCa_Inp5TmgNr0vV1gg3GrVbO1RF9vGIDhpFfpUFE8z0t-JJE2j6eqKavJk8j11wH",
+                "https://play-lh.googleusercontent.com/QQcaLw4Gs2jM0jK7t7htpjF8rj3Gc215x4BR3t4PnGSEcMnXHVgg1pea5wyqNkfOKDct",
+                "https://play-lh.googleusercontent.com/f6oyqtWwpmFWG3M_7RAaGwYBBz1jaQS0fJjP3sQE1aoCY2qB2nX2Pe9QjXJrmslusaU",
+                "https://play-lh.googleusercontent.com/53b0XZUzrYgpxTBLmiLChyhsM7DQUTYTNZYyEjWRzodEQfkj9E4NkKO_6RGZX9piUEec",
+                "https://play-lh.googleusercontent.com/djMVHHL-YiAlMtIgBfpMF3mvTkdGf2Dnn7YoufqJ5vCvVsHr8aoGr_W9xihiSoN76m0",
+                "https://play-lh.googleusercontent.com/g9qgXoTegvgkXjZSbHhrh7ro1_eh3TgEQchBO9WAkGacasrHDWanx_EYuq7Y-8d8-BZq",
+                "https://play-lh.googleusercontent.com/DECFmAaMkqcLWlKEw0GJZerwTiANQxzqAUt9lzGDKmSmQjqAlzVQeTyI_FtwZk_RgNw",
+                "https://play-lh.googleusercontent.com/ar9DPgb_c63w4erNz43sSl5ZMU_ULkED4beDfWfEKPFgzjYZbIbgCylse5MC17YqsHM",
+                "https://play-lh.googleusercontent.com/-xBGrf4cz3vZhhTW26vFOlBB24SShSFMwMi_58XSjAXddu71fdWLGcx4KTZf-eLQyhY",
+                "https://play-lh.googleusercontent.com/inyKstaOeyiOWoIgp9se8h_ixHLXNYn9J1Tteaep8zNLSOHdbWphftH-_jlc5zzosJQV",
+                "https://play-lh.googleusercontent.com/mV2z8d1_ORk6Y7AC-3SzNIiC7aUVi_5Y8GlAzaI5PoW9Z7cfz_yj7VIhfxNcwArCkVRw"
+            ],
+            "video": "https://www.youtube.com/embed/_w8FQfQZ1SA?ps=play&vq=large&rel=0&autohide=1&showinfo=0",
+            "videoImage": "https://play-lh.googleusercontent.com/9gOTPuX04WeVNByX9Z1n6T2k11lS3Ds8w7wEX1VQo_lXQ7q1lHEHHkEcUeGTyeGgL0Y7",
+            "previewVideo": "https://www.youtube.com/embed/_w8FQfQZ1SA?ps=play&vq=large&rel=0&autohide=1&showinfo=0",
+            "ipadScreenshots": [],
+            "appletvScreenshots": []
+        },
+        "metrics": {
+            "ratings": {
+                "average": 4.080933,
+                "averageText": "4.080933",
+                "total": 13296552,
+                "distribution": [
+                    2052189,
+                    449657,
+                    747488,
+                    1167621,
+                    8879547
+                ]
+            },
+            "reviews": 200473,
+            "installs": {
+                "text": "5,000,000,000+",
+                "min": 5000000000,
+                "max": 5526683421
+            }
+        },
+        "permissions": {
+            "list": {
+                "Identity": [
+                    "find accounts on the device"
+                ],
+                "Contacts": [
+                    "find accounts on the device"
+                ],
+                "Microphone": [
+                    "record audio"
+                ],
+                "Other": [
+                    "control vibration",
+                    "full network access",
+                    "install shortcuts",
+                    "prevent device from sleeping",
+                    "read Google service configuration",
+                    "run at startup",
+                    "use accounts on the device",
+                    "view network connections"
+                ],
+                "Uncategorized": [
+                    "Modify Google service configuration",
+                    "receive data from Internet"
+                ]
+            },
+            "count": 5
+        },
+        "price": 0,
+        "priceText": "Free",
+        "summary": "Play games instantly, save progress, and earn achievements.",
+        "title": "Google Play Games",
+        "url": "https://play.google.com/store/apps/details?id=com.google.android.play.games&hl=en&gl=us",
+        "version": {
+            "number": "Varies with device",
+            "released": "Jul 24, 2013",
+            "lastUpdated": 1742233811,
+            "minimumOsVersion": null,
+            "maximumOsVersion": "VARY",
+            "osVersionText": "Unknown"
+        },
+        "comments": [
+            {
+                "id": "3bebbcc0-bf32-41f4-b6d0-d7860dfef167",
+                "userName": "kalpna srivastava",
+                "text": "Good 👍",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "2024.03.51732 (646593252.646593252-000400)",
+                "at": "2025-03-24T13:17:36",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "62d791f0-a697-41ae-ba2e-26523b229549",
+                "userName": "Sartaj Khan",
+                "text": "this is very good game. This game features is so beautiful",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": null,
+                "at": "2025-03-24T12:56:30",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "d299db41-43dc-469a-ba2c-30d6a2f6a415",
+                "userName": "Taweng Laurie (Weng)",
+                "text": "very reliable application",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "2024.09.55107 (700264509.700264509-190400)",
+                "at": "2025-03-24T12:05:38",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "840706ea-bb3e-4ed3-8d3a-1cb85bbe8600",
+                "userName": "Francine Moore",
+                "text": "Great updates and support with troubleshooting",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "2024.09.55107 (700264509.700264509-190400)",
+                "at": "2025-03-24T09:22:23",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "a6efd386-9c61-4979-9377-95505686cca6",
+                "userName": "Ollie",
+                "text": "love my game on good play games Thanks you Again",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": null,
+                "at": "2025-03-24T08:45:57",
+                "replyContent": null,
+                "replyAt": ""
+            }
+        ]
+    },
+    {
+        "appId": "in.playsimple.wordsearch",
+        "categories": [
+            {
+                "name": "Word",
+                "id": "GAME_WORD",
+                "_id": "02in.pla"
+            }
+        ],
+        "category": "Word",
+        "categoryId": "GAME_WORD",
+        "contentRating": "Everyone",
+        "currency": null,
+        "description": "With Word Search Explorer embark on a wondrous quest of adventure and wisdom, where the fun never stops!\r\n\r\nThis FREE TO PLAY word game makes learning new words so easy and much more fun. Flex your brain, connect the letters and swipe your way through hundreds of word puzzles, while steadily growing your vocabulary and confidence for the challenges ahead!\r\n\r\nSuccessfully completing each puzzle will bring you closer to your next destination!\r\n\r\nBuckle-up and get ready to go on an endeavour that takes you through breathtaking landscapes while training your brain to become a TRUE champion of the mind!\r\n\r\nBelieve the hype, join thousands of word game enthusiasts and download Word Search Explorer today!\r\n\r\nHOW TO PLAY:\r\n\r\nAs easy as taking a walk in the park, find words that are hidden in the letter grid related to a common theme. Swipe your fingers to form the words that are hidden in plain sight. The puzzles get trickier as you progress while gaining more wisdom!\r\n\r\nGAME FEATURES:\r\n\r\n- FREE TO PLAY: Get this game for FREE and put your word game skills to the test\r\n- GUIDING HINTS: The game offers multiple hints which will guide and help you on your journey.\r\n- PLAY ANYTIME, ANYWHERE: Take a break and play offline wherever you want!\r\n- CHALLENGING PUZZLES: Easy to play, hard to master! A new challenge awaits for you after every puzzle\r\n- BOOSTS YOUR VOCABULARY: Improve your vocabulary as the game exposes you to a wide variety of words that will help you in your daily life\r\n- SYNC YOUR GAME PROGRESS: Login through facebook and sync your game progress across multiple devices\r\n\r\nPack your bags and get ready to Explore, Wander & Discover. No need to wait, start playing Word Search Explorer and begin your voyage today!",
+        "developer": {
+            "name": "PlaySimple Games",
+            "id": "5614380929317640208",
+            "internalId": "5614380929317640208",
+            "email": "support@playsimple.in",
+            "privacyPolicy": "https://playsimple.in/privacy",
+            "legalName": "PlaySimple Games",
+            "legalEmail": "support@playsimple.in",
+            "legalAddress": "30 Cecil Street, #19-08,\nPrudential Tower,\nSingapore (049712)"
+        },
+        "features": {
+            "isEditorChoice": null,
+            "hasAds": true,
+            "isPreregister": null,
+            "isEarlyAccess": null,
+            "isPlayPassAvailable": null,
+            "requiredFeatures": []
+        },
+        "hasInAppPurchases": true,
+        "headerImage": "https://play-lh.googleusercontent.com/QKSBXslhbgWB9gyf2BHsGDxQ9o-dnseUtdQMfcbUsxJevxuo66jT-K4D7HbU7ysgPC9G",
+        "icon": "https://play-lh.googleusercontent.com/k7RcltpIXoXb8EeDUxZxgDnPoKsRVp6t5YCegGIFAL91fk1PHX65W62uAfqwcg5drWpW",
+        "isFree": true,
+        "media": {
+            "screenshots": [
+                "https://play-lh.googleusercontent.com/mZ1K6LeqVYTqj_STr-pr9NKVdq9CelDipZcly7pishviJ8aRz9Xoj8NlnAyb2Bn-yw",
+                "https://play-lh.googleusercontent.com/lczqLxw08q5bREQ6pwRC_CqTl1N859kVdQ5dhXIthvy5EF4Ino_ybIKRdhlko4O1i9U",
+                "https://play-lh.googleusercontent.com/nhCjDE7cslrJRE95IpXiu6J5OeCQSVg9esE4MMh5ETogXWr9IeP9lfwDeirX_tNNkfQ",
+                "https://play-lh.googleusercontent.com/qCpF0XvnWFdDwpAAmmZL5kjZ-jUO9glSaAUPDAHiCSJh7DA314SIbsuhMopF-eb6ftEt",
+                "https://play-lh.googleusercontent.com/oqZmhsm3u00tLBoKqm_aEA_uU5zfnOjMdYqnhFFPmdGjXd3RKgO9oJR0WKPHFTDxdZs",
+                "https://play-lh.googleusercontent.com/K6HStb5Lf-8oKVNHJUGPkEitphUXk2Y3wjJSPNOAilzoNOsrWjfqbeRlyGzSEXE9k1c",
+                "https://play-lh.googleusercontent.com/JPlsHBDv9sk0n7MPHo5C2i8D2Emykas3iQOEFPSb55HxhyG2b0Ur0cbSwL6lgjXuFUA",
+                "https://play-lh.googleusercontent.com/kl5BU3rfFugYWFCPatMRHIqUgWgdXUZOARoaoURT_sdF2cKRNvG9BvSMA7PgYB335fo",
+                "https://play-lh.googleusercontent.com/UzD-2gHnacm1KdSyO1lNTb0xNmQSOtV93-FwC2_wZqJIySJGuR29VBz7XD5FSJ2_bQ",
+                "https://play-lh.googleusercontent.com/bHseOWHPQ7tcmq9JDigaORJBICdKaggiRJ8fG63XYaHk2nm9UyQ8JJjJ-6FyWf43rezc",
+                "https://play-lh.googleusercontent.com/6jMgEeUyQmJ96h77VmvwVVS6IfmvSS6W-rpUCS4SI-Tc_jQV_pX0hEdLio7qqVb1nRY",
+                "https://play-lh.googleusercontent.com/I4EgA2Q5tLONphJ41OwUALKbW08gprMRsFTU8mOgg9sZjV-cFq2Nty9KTwH5vYgihxVb",
+                "https://play-lh.googleusercontent.com/H5yMnlETqugQW1rZMPyLTkeFs1-6VHvbOlarXocTOFUsr-YWGQbctigMxewGeNr5tA",
+                "https://play-lh.googleusercontent.com/9Ykx9vzW-vA6H6T58m7YXAgVk7hecqbIqhEU8igAMzz6Ybs2ESKkZ3dIck9zujw6pw",
+                "https://play-lh.googleusercontent.com/iTxaykoWxJc9udF-WUOkfPoD9_lLl6-OZwjXIpF4gRgWNPiV870Ov7ZmYlNcJ3pAhw",
+                "https://play-lh.googleusercontent.com/aFx5FBKxpn3uJ0AX0LNuEc-wtbH5sOr7Duu9Je9uCXpkTrZVGukxYUrL8eWCI5Lo0wY",
+                "https://play-lh.googleusercontent.com/O88Mh5AL2ckT-rT_0MBQU6NgPNsNOGIMv2M-ds9SRKxPuNuyQnFvYcnxfbRWJFisadI",
+                "https://play-lh.googleusercontent.com/b99XVgfHXJamCqte9tmiU4deYLXTMH3NksQiCo61Tfxk1acL-SwasLzLy_5Md0q8sNYj",
+                "https://play-lh.googleusercontent.com/G8tY2LFcUj491mkAFf0G8Bi9yvX99fn423ppsEnHIEDKQ_gL1-D_zSGsmC7sysovyg",
+                "https://play-lh.googleusercontent.com/DsPH4eIUxgkbogR1mjsPbHBBguWs_GOqLnsoFb7HWvJKF2fCqp_N05egh9_gokJfft6p",
+                "https://play-lh.googleusercontent.com/GssAQLqBE_IJsLb_VF85-5aqiOm0EjAbjEOgJQYQcsVDqLRLTSZOyHbUgCy9DrKnwWyo",
+                "https://play-lh.googleusercontent.com/FS0XyaU7O6hWD5qZBxDf1aEm4XL_NRBcWiNhR66idDFmz4AXcebGBBgQcqBLtXTKZ6U",
+                "https://play-lh.googleusercontent.com/Kn3EZAH3eQVQQ3f9jMMZIQ66CHbrpS43HCvomN9QmI7G5pTCpPCYim881ySaZXhRtQ",
+                "https://play-lh.googleusercontent.com/r2Os_QBN8vGviUKeqPdKaOmnfyLU76965GqrZIWUgf97K7p1-CHMdHBO0WRRjRDekVIB"
+            ],
+            "video": null,
+            "videoImage": null,
+            "previewVideo": null,
+            "ipadScreenshots": [],
+            "appletvScreenshots": []
+        },
+        "metrics": {
+            "ratings": {
+                "average": 4.9164124,
+                "averageText": "4.9164124",
+                "total": 569115,
+                "distribution": [
+                    4766,
+                    1835,
+                    3448,
+                    16087,
+                    542969
+                ]
+            },
+            "reviews": 16066,
+            "installs": {
+                "text": "10,000,000+",
+                "min": 10000000,
+                "max": 36822724
+            }
+        },
+        "permissions": {
+            "list": {
+                "Photos/Media/Files": [
+                    "read the contents of your USB storage"
+                ],
+                "Storage": [
+                    "read the contents of your USB storage"
+                ],
+                "Wi-Fi connection information": [
+                    "view Wi-Fi connections"
+                ],
+                "Other": [
+                    "full network access",
+                    "prevent device from sleeping",
+                    "read Google service configuration",
+                    "run at startup",
+                    "set an alarm",
+                    "view network connections"
+                ],
+                "Uncategorized": [
+                    "receive data from Internet"
+                ]
+            },
+            "count": 5
+        },
+        "price": 0,
+        "priceText": "Free",
+        "summary": "Play this visually-pleasing word game specially designed for seniors!",
+        "title": "Word Search Explorer",
+        "url": "https://play.google.com/store/apps/details?id=in.playsimple.wordsearch&hl=en&gl=us",
+        "version": {
+            "number": "1.218.0",
+            "released": "Nov 19, 2021",
+            "lastUpdated": 1741357632,
+            "minimumOsVersion": null,
+            "maximumOsVersion": "VARY",
+            "osVersionText": "Unknown"
+        },
+        "comments": [
+            {
+                "id": "64cebc79-3f82-4465-853e-f32c7db3b8fb",
+                "userName": "Stacie Bayne",
+                "text": "excellent",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": null,
+                "at": "2025-03-24T15:35:56",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "781af7e9-270b-4bae-a17d-92ee212c69cc",
+                "userName": "C R",
+                "text": "Great Game",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "1.218.0",
+                "at": "2025-03-24T15:15:39",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "6ad9fa86-a398-4dc7-abe1-edcee3395d9c",
+                "userName": "Kathleen Sprung",
+                "text": "Very good and relaxing to do.😊",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "1.218.0",
+                "at": "2025-03-24T14:28:39",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "104daea3-6730-4a80-bac5-3b2b45ae0288",
+                "userName": "Jay Casper",
+                "text": "i love this app, i really do, i paid for no ads and it was well worth it at first. i want to give it 5 stars. but there is one feature that drives me absolutely insane. the duels with other players. i truly can't stand it. i like to play this for 10 or so mins before bed to wind down and relax, but then it suddenly gives me a time limit to beat another player, and it completely ruins it for me. PLEASE god make the duels optional. or just get rid of them. NOBODY likes them. please.",
+                "score": 1,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "1.218.0",
+                "at": "2025-03-24T13:08:39",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "0b39cfcf-708b-4233-a3a7-095c274b5318",
+                "userName": "Yasmin Khan",
+                "text": "best game",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "1.218.0",
+                "at": "2025-03-24T12:50:53",
+                "replyContent": null,
+                "replyAt": ""
+            }
+        ]
+    },
+    {
+        "appId": "com.JindoBlu.OfflineGames",
+        "categories": [
+            {
+                "name": "Casual",
+                "id": "GAME_CASUAL",
+                "_id": "03com.Ji"
+            }
+        ],
+        "category": "Casual",
+        "categoryId": "GAME_CASUAL",
+        "contentRating": "Everyone",
+        "currency": null,
+        "description": "Get ready for 'Offline Games': fun for all ages, and a mental workout too! This offline game collection is like an overflowing toy box packed with more than 20 unique minigames. It's designed for classic game enthusiasts, puzzle lovers, and challenge seekers. And the best part? You don't need an internet connection to enjoy it!\r\n\r\nOur array of Number Games like 2048 and 2248 will get your neurons firing. Engage in these numeric challenges and strive to hit the highest scores. They're perfect for keeping your mind sharp, and they're addictive, too! You'll find yourself coming back to beat your own scores time and again.\r\nWord Games are a great way to expand your vocabulary and language skills. With word guess and word finder, you'll embark on an adventure through a maze of letters, uncovering hidden words, and building your own word lists. It's a fun way to learn new words, and the challenge will keep you hooked for hours.\r\n\r\nFeel the adrenaline rush with our Thrilling Challenges. Step into the mind-bending world of Minesweeper, where every click could be your last. Or play Hangman, where you'll rack your brains to guess the right letters before time runs out.\r\n\r\nWe've brought back some of your favorite Classic Memory Games. Engage your brain in our sound memory game, a modern twist on the classic 'Simon Says'. For a bit of nostalgia, we've also included the much-loved game of Snake.\r\n\r\nFor the serious strategists and thinkers out there, our Mind Benders section is perfect. Chess and Chess puzzles will provide a mental workout and fun brain training. Hone your strategic skills, and take on the challenge to become the grandmaster.\r\n\r\nOur Two-Player Games offer the perfect opportunity for a friendly showdown. Go head-to-head with AI in games like Checkers, Pool, or Tic Tac Toe, even when you're in airplane mode. It's fun gaming action whenever you want, wherever you are! See if your friends can do better!\r\n\r\nOur collection includes brain-stimulating games like Tap Match, Solitaire, Sudoku, Wood Blocks, 4 in a row, and the Sliding Puzzle in our Keep Them Thinking section. These games are designed to keep your mind sharp and focused, and they're also a lot of fun.\r\n\r\nEver wanted to try your hand at an exotic game? Now you can, right from your device, with Mancala in our Exotic Games section.\r\n\r\n'Offline Games' is a fantastic app for all ages - kids, teens, adults, and even seniors. It offers a fun, engaging, and stimulating gaming experience without the need for an internet connection. Whether you're on a long journey, stuck at home, or in the middle of a flight, you're never far from the action with 'Offline Games'. It's the perfect app to challenge yourself, pass the time, and have loads of fun.\r\n\r\nRemember, with 'Offline Games', you don't need an internet connection to play. You can enjoy your favorite games anytime, anywhere. Say goodbye to those dull moments and welcome endless entertainment with 'Offline Games'. Who knew having fun could be this easy? Jump in and start playing today!",
+        "developer": {
+            "name": "JindoBlu",
+            "id": "8369547020914796683",
+            "internalId": "8369547020914796683",
+            "email": "jindofrog@gmail.com",
+            "privacyPolicy": "https://www.iubenda.com/privacy-policy/64629328",
+            "legalName": "JindoBlu",
+            "legalEmail": "jindofrog@gmail.com",
+            "legalAddress": "Bollate (MI), via Mascagni 3"
+        },
+        "features": {
+            "isEditorChoice": null,
+            "hasAds": true,
+            "isPreregister": null,
+            "isEarlyAccess": null,
+            "isPlayPassAvailable": null,
+            "requiredFeatures": []
+        },
+        "hasInAppPurchases": true,
+        "headerImage": "https://play-lh.googleusercontent.com/qXN_hJKWUnchQHIhIk-6iPGu7IbrbYeZeMcgvsAfnM-ttLSHROt0z6gwn_ahYDv006U",
+        "icon": "https://play-lh.googleusercontent.com/UoBeMWwIeHSxGAx1EhmvWrG1lkzlG78UByGwEkEhRlp40udqC0hHJeRTl266g9aG-A",
+        "isFree": true,
+        "media": {
+            "screenshots": [
+                "https://play-lh.googleusercontent.com/ocyMzUE1pLPwdu36u7f5fx6r4i0bCq7czyUvaEPp5IrHCyWwPcxK5NO-zvUMzM3dDN4",
+                "https://play-lh.googleusercontent.com/ADDOZ3aWbLVoAPnryN6-RZFKC816Rmi0P5QaGqRdB-lumjcrVBNxaC29cF_LZ_Yuhpo",
+                "https://play-lh.googleusercontent.com/x79AvLWRZtScm2B9FtXkI8h63hWaejrSA-E7bznoHjLpikJm_dTJFHljVorOyF6A2Es",
+                "https://play-lh.googleusercontent.com/ld85vsTl8HBbX9bTm7MMqsgLjF_bgdb-jqJekp_QQY8JBzDza9zZWS3ATbnDbCBBAVs",
+                "https://play-lh.googleusercontent.com/eOwMdH4312kSkXQQmA0IWSxF32jSBfsE1xK5IULNZUWHPIbbW-q5lQGQUN7zAzDc-dA",
+                "https://play-lh.googleusercontent.com/PwSdfJBXysOgq60cDtJla9_zJQy9Xr9j0avF0XOOIaPSUkLl8G2Vp5_xVev9oi-sLxw",
+                "https://play-lh.googleusercontent.com/4dVEhOSCGSIhsffAYn_O4sjhZUylcwh9LIU30I5ByjfwHvlw09NACvXQd-kRRcUR2Q",
+                "https://play-lh.googleusercontent.com/2DA5OZ7-4smmEPdwZ-mMisKN5EPhlnxhGvHf7ok2Xdatl8r-1dEK8YwhMuZcjxXJwDfp",
+                "https://play-lh.googleusercontent.com/YbbmcilNxw_Nu3cZSAsmECxVYpreCUbzv_NAgw-1LWExjD0nNr__pyO3S4RtyUgVME4",
+                "https://play-lh.googleusercontent.com/v4u_V06G74R4Rd1o5rS1op-QmhyTowXJnUi9zOI9wOplZvWiKej0H3U94wWWxLxW2WU",
+                "https://play-lh.googleusercontent.com/0au-QTdhcw-qOGuJ2lo8bCj_G5kbNe4c5jTzJLMgQFrJ08Tx6szqto1gBdIksSE79NI",
+                "https://play-lh.googleusercontent.com/7Cgp1htv63ofCu30emnAuW9LCc0lTwj539xNap5AaugAj7p8L14xz0f4_PgSttdg9WQ",
+                "https://play-lh.googleusercontent.com/NsYztdXrZnZ4Kbh8XfdpX1g2TBzR8arfO_14C68aQYpTEz7Wrk-URxef0b8AE_B-mI0",
+                "https://play-lh.googleusercontent.com/Ekwgc7t2hT8MlrdeGTVHLqwLi8J5dIGVf0RGIRD9fVGmvckuEquWpUSbJYXdp88VB7g",
+                "https://play-lh.googleusercontent.com/fLnx1BQllCaopVqGt4kePguhT6r65Yfhuna1fa0y8MHAV6J6f9WUp6kobH6dFQPsN2s",
+                "https://play-lh.googleusercontent.com/mpPJNKgaHK6mP_IpRdYoHpVhaF5_hTpH8aKV997OPWCfBobvnZJgVM_0rBGk_1oCF2Xg",
+                "https://play-lh.googleusercontent.com/1-eTq9KSUEikmZqZ07OS2Wwqmu3pDHpmrFZsC8d5IxDp5JyfpRiNg3R2MrM6aFaTfaY",
+                "https://play-lh.googleusercontent.com/RtOC581hSZDXgn6_ml8xbwME0zoGxII7729NUFR7VlEClNsPYZMe-DI4EXNIb_cqKbk",
+                "https://play-lh.googleusercontent.com/mKVSzh9SXko4q7qCO9Xb5ilx7Qsr934HvruC8mYyZkuA12Gh44brujNXbgXWo1vLQ1k",
+                "https://play-lh.googleusercontent.com/mWc20xpDPIAtVeJOqUjsOhmslSLSVfebJ_x6YiHzbLvNVolgay0zwEK1mwFwDOwskEfz",
+                "https://play-lh.googleusercontent.com/Bs-wxsWcYntCnhSk_aU4QntqMP8NQpaFxd1tedp2RbnOk9iSHT8bqO6DLXfdrqS7c6I3",
+                "https://play-lh.googleusercontent.com/EOarxgXdZQEbqXJZpejwEMfybps6BiCOzpnrLP-zaLbmB21YuNvTngk94NGEGClsuww",
+                "https://play-lh.googleusercontent.com/TcZ5-bK53fTNPzQCHYNhkNGkwqkQE_425rqYSqQCr8kHWMsmGrAW1ASFVPlDHLgrcw",
+                "https://play-lh.googleusercontent.com/9a9dp0C3mVTMZFGeZ0Gjou9RBC5SLP4yEDWbX9ahh-LHTGGw5WgxJW3CNf3kRF-FOg",
+                "https://play-lh.googleusercontent.com/_zmNX7yBs0aZZfpmLGzJ5qy9W4vDb-AjVWwz9sEUD3-msljzu5TE8qYh8uJvkWjlAw",
+                "https://play-lh.googleusercontent.com/0CU06idWnT9qLB-Xg5FqUB0FNHyB3clPJcEWAO2jsYvbuZ3RuZbXvgvEjwpXkE_cicM",
+                "https://play-lh.googleusercontent.com/hRVDSAuwogrJxfYBlIGp_vVH0qESUIcgnXPAKExPqP7JV3P9PQ-uXOdvBriHCW9j0w",
+                "https://play-lh.googleusercontent.com/J7UTM4T-etUgKW85oQKR7-ockVHC33ge25VwGa8XPG0Ai3VYmdD25QWQd7e6V4XnnoI"
+            ],
+            "video": "https://www.youtube.com/embed/LtzgnT70zf8?ps=play&vq=large&rel=0&autohide=1&showinfo=0",
+            "videoImage": "https://play-lh.googleusercontent.com/qXN_hJKWUnchQHIhIk-6iPGu7IbrbYeZeMcgvsAfnM-ttLSHROt0z6gwn_ahYDv006U",
+            "previewVideo": "https://www.youtube.com/embed/LtzgnT70zf8?ps=play&vq=large&rel=0&autohide=1&showinfo=0",
+            "ipadScreenshots": [],
+            "appletvScreenshots": []
+        },
+        "metrics": {
+            "ratings": {
+                "average": 4.5982027,
+                "averageText": "4.5982027",
+                "total": 250477,
+                "distribution": [
+                    13929,
+                    5894,
+                    7602,
+                    11993,
+                    211034
+                ]
+            },
+            "reviews": 7827,
+            "installs": {
+                "text": "100,000,000+",
+                "min": 100000000,
+                "max": 122403078
+            }
+        },
+        "permissions": {
+            "list": {
+                "Wi-Fi connection information": [
+                    "view Wi-Fi connections"
+                ],
+                "Other": [
+                    "control vibration",
+                    "full network access",
+                    "prevent device from sleeping",
+                    "view network connections"
+                ]
+            },
+            "count": 2
+        },
+        "price": 0,
+        "priceText": "Free",
+        "summary": "Choose from lots of puzzles and minigames to play. Chess, wordgames & more!",
+        "title": "Offline Games - No Wifi Games",
+        "url": "https://play.google.com/store/apps/details?id=com.JindoBlu.OfflineGames&hl=en&gl=us",
+        "version": {
+            "number": "2.13.3",
+            "released": "Aug 4, 2023",
+            "lastUpdated": 1741968764,
+            "minimumOsVersion": null,
+            "maximumOsVersion": "VARY",
+            "osVersionText": "Unknown"
+        },
+        "comments": [
+            {
+                "id": "0eea7d80-3bfb-4a35-9b19-a4c9981a8ec3",
+                "userName": "Chandan Manna",
+                "text": "created a new science game",
+                "score": 1,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "2.11.5",
+                "at": "2025-03-24T15:26:22",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "bc4122b2-69db-4ccb-bce2-26ee5dd4b77e",
+                "userName": "Pratiksha Gayakwad",
+                "text": "💝👑",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "2.13.3",
+                "at": "2025-03-24T15:05:06",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "2065ae1d-063e-4492-ab1a-c754be84e5ed",
+                "userName": "Soren Price-Howard",
+                "text": "A great variety of simple, yet entertaining games. I like how you can play with 2 people in some of the games too.",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "2.13.3",
+                "at": "2025-03-24T14:52:26",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "73bcf666-1f8e-4c31-aefa-a50a9b7471e3",
+                "userName": "Mahar Ali",
+                "text": "l love my 100 offline game",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": null,
+                "at": "2025-03-24T14:26:37",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "cf378d30-be9f-473b-ac8f-7739f25399c3",
+                "userName": "Purnima Chetia",
+                "text": "⭐⭐⭐⭐⭐Nise 😍🥰🤩😊☺️🙂",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": null,
+                "at": "2025-03-24T14:14:15",
+                "replyContent": null,
+                "replyAt": ""
+            }
+        ]
+    },
+    {
+        "appId": "com.kiloo.subwaysurf",
+        "categories": [
+            {
+                "name": "Arcade",
+                "id": "GAME_ARCADE",
+                "_id": "04com.ki"
+            }
+        ],
+        "category": "Arcade",
+        "categoryId": "GAME_ARCADE",
+        "contentRating": "Everyone 10+",
+        "currency": null,
+        "description": "DASH as fast as you can! \r\nDODGE the oncoming trains! \r\n\r\nHelp Jake, Tricky & Fresh escape from the grumpy Inspector and his dog. \r\n\r\n★ Grind trains with your cool crew! \r\n★ Colorful and vivid HD graphics! \r\n★ Hoverboard Surfing! \r\n★ Paint powered jetpack! \r\n★ Lightning fast swipe acrobatics! \r\n★ Challenge and help your friends! \r\n\r\nJoin the most daring chase! \r\n\r\nA Universal App with HD optimized graphics.\r\n\r\nOriginally co-developed by SYBO and Kiloo.",
+        "developer": {
+            "name": "SYBO Games",
+            "id": "7363891306616760846",
+            "internalId": "7363891306616760846",
+            "email": "help_subwaysurf@sybogames.com",
+            "privacyPolicy": "https://sybogames.com/privacy-policy/",
+            "legalName": "SYBO Games",
+            "legalEmail": "help_subwaysurf@sybogames.com",
+            "legalAddress": "Holmens Kanal 7, 3.\n1060 Copenhagen K\nDenmark"
+        },
+        "features": {
+            "isEditorChoice": null,
+            "hasAds": true,
+            "isPreregister": null,
+            "isEarlyAccess": null,
+            "isPlayPassAvailable": null,
+            "requiredFeatures": []
+        },
+        "hasInAppPurchases": true,
+        "headerImage": "https://play-lh.googleusercontent.com/ngguc4Mg_GcQWedr5CTJ4_78fgutWLJFVcNTzshhLj0sYijLDKLmfIM7f8hQ3xD9A7YC",
+        "icon": "https://play-lh.googleusercontent.com/bBF-xD47BOb3nfbbXF-Isx8LdZHX_Uxz6h14ughVjhCVDzdWU2NeJzJIv1wW4F1q7Rw",
+        "isFree": true,
+        "media": {
+            "screenshots": [
+                "https://play-lh.googleusercontent.com/R3fO1EkpgRNZNDBWURapwsy4E8ojUqT_jYr6yERILwfZ3OdoKQIp-UKtLXyTkzgxJts",
+                "https://play-lh.googleusercontent.com/WYjmemRENnqKUfX94Hy8s0FfPjXoE45oDDOQhC8ammPlQvJgzLcmFSnS7fq3OrENd28f",
+                "https://play-lh.googleusercontent.com/QQUkT5OuRSwIPcMemLZ8dEPg47Kb4BpNDu5UP5CvnOfj8Cq_mi9l_azSyUmRT2i-5Q",
+                "https://play-lh.googleusercontent.com/OAjxuaF-v3aXt3RmyMf8z8bSMv-XG_t2n7h4zqhDdLTgACLW36XJYN0f7wjY982zEVe_",
+                "https://play-lh.googleusercontent.com/gXlakAgGilTXd6B3IuZJli0w1GfHVMFnoHONzVX2Ahsovgjz_-KVl8lsNZUl2ZtcbR21",
+                "https://play-lh.googleusercontent.com/GPVVmZfSxLlfJS--6t_SAXsN7Fj4BxGO0bCF8ur_3ygAELae80EAleStHpr3H-uhWPY",
+                "https://play-lh.googleusercontent.com/HIB9phqZMMDgBexDtcUkyUpkL6wZpRreRQizHxRWKvMp_BSmfYwFvLCJ7vAQm641lBeH",
+                "https://play-lh.googleusercontent.com/TPFBHuyZjL6VKLNylkakBSWW5yoB9TZNiSYUpARk2O82_dWoPP76dz3ZthgsCeilV7c",
+                "https://play-lh.googleusercontent.com/pZYCa5C2Y2LKYcFDYVD2G-IEL75s9kx77MV_KBK-DT99Zlwql9q28nRjO-QtE2QhjA",
+                "https://play-lh.googleusercontent.com/MNSC4GkRG0M7x3H_5lYS21w9CKuE42mSq3cBpMgSE-8zuXmyejuD5SOba3xix6xWkYg",
+                "https://play-lh.googleusercontent.com/L2oYiN81oKZ1xKm6L_Fceq9ikK456O4TRdyP6A4uRzPtE6_a-XKiNu4OfoUFy9EXSw",
+                "https://play-lh.googleusercontent.com/-1iLtpIRGsJQIaBXI6sIfrbY6iDMpnbrI1PO2UPetZCMzasbzbvv1p7MbnPPMw7H89I",
+                "https://play-lh.googleusercontent.com/KvtwUmvC8DXA3k2OdP5vAB-7RMLw5_ogyFMl-5NBcYjDqWPEAWAE9KfZHKPFHJAiqAE",
+                "https://play-lh.googleusercontent.com/-vFDoTX_ZqnsCtb6skc3GB9-uz8jeBU0ewaE7UiBmHaglgnWxsSFP6cMhdaaHzJ9wme8",
+                "https://play-lh.googleusercontent.com/p3-yjH0ovEpIa_bNuxUxktt4UDMZ7LnXeHsK-LIBM3onxz2LmElU7bTsDfoDKfWmtn9m",
+                "https://play-lh.googleusercontent.com/cxq9T7pQACwMcGemBgK2H26_gl0o1BFtlqP99zJZJwjm1TRiQyzAUkvoS6vZz3Yl-w",
+                "https://play-lh.googleusercontent.com/QEoJugUCq1p-vCykwRarLRJlL6a6F2zjYFuT6YCGMvlPSiiJegs8p7_zDsucA-_YtQ",
+                "https://play-lh.googleusercontent.com/blomz9SG7fXONLxAqIp9pg9gsjuoutcHJ4vSNwTF4ZpFg2TBYn8xmMz4K2jchD07-rg",
+                "https://play-lh.googleusercontent.com/4iTBg4-_-Hho0kHcBZ7qmNywCytb7XnlpkTb0C8VR7ADHJxjrLMOcrJOw34shwDmY6Y",
+                "https://play-lh.googleusercontent.com/7r6PVd2cxelNFgLJQjsMuuhcW-IY2-Gejgg2W4JoNq2q39K8EUFVyJyOPVNIpzsAdgrZ",
+                "https://play-lh.googleusercontent.com/OeAwy0fBWJvDmWzZlvaJLU6Uz4OtsiQ-50zqU5BHqoyi2F9EaMfu75yGDlkqs72ny5o",
+                "https://play-lh.googleusercontent.com/ztTIme3MtE3OehyWK0UGMRS0n2apBCDQHEcGL1DMAVG5DijFwkJ4eUfgylzqTEdV7mnC",
+                "https://play-lh.googleusercontent.com/5syWaEmwNcx8MSbrYpouubfPyrBgNqbLzgUyco8JSjOfdfHhricYKukYa1iPLtxodGk",
+                "https://play-lh.googleusercontent.com/-i_0f3dFoh1mHyHVKJmGI_HInMjDX38xjkS9mM0MY1Nl7O3trxBOImEDO3-jvkwaug"
+            ],
+            "video": "https://www.youtube.com/embed/VuOIsGZxdvM?ps=play&vq=large&rel=0&autohide=1&showinfo=0",
+            "videoImage": "https://play-lh.googleusercontent.com/ngguc4Mg_GcQWedr5CTJ4_78fgutWLJFVcNTzshhLj0sYijLDKLmfIM7f8hQ3xD9A7YC",
+            "previewVideo": "https://www.youtube.com/embed/VuOIsGZxdvM?ps=play&vq=large&rel=0&autohide=1&showinfo=0",
+            "ipadScreenshots": [],
+            "appletvScreenshots": []
+        },
+        "metrics": {
+            "ratings": {
+                "average": 4.557701,
+                "averageText": "4.557701",
+                "total": 41873902,
+                "distribution": [
+                    2281129,
+                    681051,
+                    1461029,
+                    4431011,
+                    33019664
+                ]
+            },
+            "reviews": 1790986,
+            "installs": {
+                "text": "1,000,000,000+",
+                "min": 1000000000,
+                "max": 2576594164
+            }
+        },
+        "permissions": {
+            "list": {
+                "Photos/Media/Files": [
+                    "modify or delete the contents of your USB storage",
+                    "read the contents of your USB storage"
+                ],
+                "Storage": [
+                    "modify or delete the contents of your USB storage",
+                    "read the contents of your USB storage"
+                ],
+                "Wi-Fi connection information": [
+                    "view Wi-Fi connections"
+                ],
+                "Other": [
+                    "Google Play license check",
+                    "control vibration",
+                    "full network access",
+                    "prevent device from sleeping",
+                    "view network connections"
+                ],
+                "Uncategorized": [
+                    "receive data from Internet"
+                ]
+            },
+            "count": 5
+        },
+        "price": 0,
+        "priceText": "Free",
+        "summary": "Help Jake, Tricky & Fresh escape from the grumpy Inspector and his dog!",
+        "title": "Subway Surfers",
+        "url": "https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf&hl=en&gl=us",
+        "version": {
+            "number": "3.43.3",
+            "released": "Sep 20, 2012",
+            "lastUpdated": 1742301666,
+            "minimumOsVersion": null,
+            "maximumOsVersion": "VARY",
+            "osVersionText": "Unknown"
+        },
+        "comments": [
+            {
+                "id": "a65bea6d-e619-4d27-817e-0b128979bef4",
+                "userName": "A Google user",
+                "text": "Os good",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": null,
+                "at": "2025-03-24T15:46:56",
+                "replyContent": "We're glad to hear you're enjoying it!",
+                "replyAt": ""
+            },
+            {
+                "id": "a8eafe2e-c394-43e7-9c17-b185aa4e66d5",
+                "userName": "Karan Kumar",
+                "text": "harsh",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": null,
+                "at": "2025-03-24T15:36:34",
+                "replyContent": "We appreciate your input! Please share more about your experience at reviews@sybogames.com.",
+                "replyAt": ""
+            },
+            {
+                "id": "a135abd2-bdd1-4352-9ac9-a600efbcf2b1",
+                "userName": "Mitre Md",
+                "text": "I love this game ,this is my first childhood game😁.Ista",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "3.43.3",
+                "at": "2025-03-24T15:35:56",
+                "replyContent": "It's awesome to hear how much joy this game brings back from your childhood! If you have any specific feedback or thoughts to share, we’d love to hear it!",
+                "replyAt": ""
+            },
+            {
+                "id": "7a22842c-bb08-4ce8-9cc6-14a3133e5c5e",
+                "userName": "Ehsmir Rehmab",
+                "text": "I love it❤️☺️",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": null,
+                "at": "2025-03-24T15:32:48",
+                "replyContent": "We appreciate your love and enthusiasm—thanks for sharing!",
+                "replyAt": ""
+            },
+            {
+                "id": "897c5825-8f8f-466e-aa23-57ddb5ee3f7d",
+                "userName": "gul rukh",
+                "text": "i love this game so much even i am 5 yers old and i love this game so much and even my friends so thank you for making this game❤💙💜💖💗💛💚💓😍",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "3.43.3",
+                "at": "2025-03-24T15:29:17",
+                "replyContent": "We’re so happy to hear how much you and your friends enjoy playing! Your enthusiasm truly brightens our day—thanks for sharing your love!",
+                "replyAt": ""
+            }
+        ]
+    },
+    {
+        "appId": "com.robtopx.geometryjumplite",
+        "categories": [
+            {
+                "name": "Arcade",
+                "id": "GAME_ARCADE",
+                "_id": "05com.ro"
+            }
+        ],
+        "category": "Arcade",
+        "categoryId": "GAME_ARCADE",
+        "contentRating": "Everyone 10+",
+        "currency": null,
+        "description": "Jump and fly your way through danger in this rhythm-based action platformer!\r\n\r\nPrepare for a near impossible challenge in the world of Geometry Dash. Push your skills to the limit as you jump, fly and flip your way through dangerous passages and spiky obstacles.\r\n\r\nSimple one touch game play that will keep you entertained for hours!\r\n\r\nCheck out the full version for new levels, soundtracks, achievements, online level editor and much much more!\r\n\r\nGame Features\r\n• Rhythm-based Action Platforming!\r\n• Unlock new icons and colors to customize your character!\r\n• Fly rockets, flip gravity and much more!\r\n• Use practice mode to sharpen your skills!\r\n• Challenge yourself with the near impossible!\r\n\r\nContact: support@robtopgames.com",
+        "developer": {
+            "name": "RobTop Games",
+            "id": "RobTop+Games",
+            "internalId": "RobTop+Games",
+            "email": "support@robtopgames.com",
+            "privacyPolicy": "http://www.robtopgames.com/privacy",
+            "legalName": "RobTop Games",
+            "legalEmail": "support@robtopgames.com",
+            "legalAddress": "Fresta kyrkväg 10\n19454 Upplands Väsby\nSweden"
+        },
+        "features": {
+            "isEditorChoice": null,
+            "hasAds": true,
+            "isPreregister": null,
+            "isEarlyAccess": null,
+            "isPlayPassAvailable": null,
+            "requiredFeatures": []
+        },
+        "hasInAppPurchases": false,
+        "headerImage": "https://play-lh.googleusercontent.com/hGbcTEQWOKvoPTg1OAIOJPSE1JDdYPk2W0N-afi4n79Y9fc3PfpYmBPZKp8rJU-vlaM",
+        "icon": "https://play-lh.googleusercontent.com/p7kWbWBFxQIrzolEqiV5uSvctLeyssZvBV7UBOX29wzZI52IdcSs4qCB_zsQJL1mt9A",
+        "isFree": true,
+        "media": {
+            "screenshots": [
+                "https://play-lh.googleusercontent.com/tr8F3wHLv-H_n0ZuXSmGbYRnfFp9cLbQ1ZMRE-m5vrW-YOM0aeCYnIfhBK6GyFh9pJk",
+                "https://play-lh.googleusercontent.com/-Q0_MvAfKS5EliTc0d5IEbD1jygxyY8IC82d2UwGMNimpe6D77VcwOaFe9c407Slw8I",
+                "https://play-lh.googleusercontent.com/iQNmj0V2spJ0hMH1ZxSJ8f_TiNhHvMTOF-x5pZDKP9zF2deZYhFMsifGIUKBM_N9LJI",
+                "https://play-lh.googleusercontent.com/r-8__UNM6HvvkJ6YRKxsLFkqQWFE9lJGEdO6cowSPsdSWgkB9sp5TZUiAQ4V25CORV0",
+                "https://play-lh.googleusercontent.com/uoAwgH03jCS1uFHUZIJFlm7y45P3N3OqyJxLhUjiEuuLpnL5meBZr2jJUVjKv5BNoA",
+                "https://play-lh.googleusercontent.com/h-hqQ2Ubx4hiWU0hw31SG96KZyJ_30v7Xuy4eyEd6oyK6jXkOnntYM9Urv11Vcsxb9bz",
+                "https://play-lh.googleusercontent.com/HUCaqaC9yFw_wsD-XrthH0MSnoP6kHY0XExkVn2cOlWcRJmnHOgNPRfUta8a_46are8",
+                "https://play-lh.googleusercontent.com/gcGRgksY1K34M7Sz2DUsvALAVVaQiSgaHxFoIzIj4pS1ohGOEuR8FEM7ypKdNgs7hWI",
+                "https://play-lh.googleusercontent.com/9CJybxxEuVHhAcUiwBMR3v9GRQmTkbdnLEbOmC5heOmSxOcBgNey_MDz__gbmm4A8WE",
+                "https://play-lh.googleusercontent.com/AANh8jaMTekkOk-YkXKQLQp39GHpNfzOdD5kYNHvNLvztPYyGBTpujqc7h5oxlAhZCU",
+                "https://play-lh.googleusercontent.com/zZNK_wP6vndo4IXQwApZYpoOU8e7b0aWcqhTvKzdgGCnBdS3Ojh-myn7teGL5U3pGxU",
+                "https://play-lh.googleusercontent.com/AKHIFjh59DgS414EnQvJpKKO5-0EKock_xz8qlufBbxW7W-qibNN_8edIViLITxyvA"
+            ],
+            "video": "https://www.youtube.com/embed/k90y6PIzIaE?ps=play&vq=large&rel=0&autohide=1&showinfo=0",
+            "videoImage": "https://play-lh.googleusercontent.com/hGbcTEQWOKvoPTg1OAIOJPSE1JDdYPk2W0N-afi4n79Y9fc3PfpYmBPZKp8rJU-vlaM",
+            "previewVideo": "https://www.youtube.com/embed/k90y6PIzIaE?ps=play&vq=large&rel=0&autohide=1&showinfo=0",
+            "ipadScreenshots": [],
+            "appletvScreenshots": []
+        },
+        "metrics": {
+            "ratings": {
+                "average": 4.3652716,
+                "averageText": "4.3652716",
+                "total": 7655547,
+                "distribution": [
+                    680062,
+                    160676,
+                    363534,
+                    929827,
+                    5521434
+                ]
+            },
+            "reviews": 494020,
+            "installs": {
+                "text": "500,000,000+",
+                "min": 500000000,
+                "max": 504863908
+            }
+        },
+        "permissions": {
+            "list": {
+                "Phone": [
+                    "read phone status and identity"
+                ],
+                "Photos/Media/Files": [
+                    "modify or delete the contents of your USB storage",
+                    "read the contents of your USB storage"
+                ],
+                "Storage": [
+                    "modify or delete the contents of your USB storage",
+                    "read the contents of your USB storage"
+                ],
+                "Wi-Fi connection information": [
+                    "view Wi-Fi connections"
+                ],
+                "Device ID & call information": [
+                    "read phone status and identity"
+                ],
+                "Other": [
+                    "full network access",
+                    "prevent device from sleeping",
+                    "view network connections"
+                ]
+            },
+            "count": 6
+        },
+        "price": 0,
+        "priceText": "Free",
+        "summary": "Jump and fly your way through danger in this rythm-based action platformer!",
+        "title": "Geometry Dash Lite",
+        "url": "https://play.google.com/store/apps/details?id=com.robtopx.geometryjumplite&hl=en&gl=us",
+        "version": {
+            "number": "2.2.144",
+            "released": "Sep 15, 2013",
+            "lastUpdated": 1734704561,
+            "minimumOsVersion": null,
+            "maximumOsVersion": "VARY",
+            "osVersionText": "Unknown"
+        },
+        "comments": [
+            {
+                "id": "1077254b-75cc-4f0d-a6f3-30335b5894c3",
+                "userName": "Veeraj Gupta",
+                "text": "very good game it's also little tricky bt very nice",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": null,
+                "at": "2025-03-24T14:48:48",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "8e397a9a-77a9-4838-8d71-9a9ffe108d2f",
+                "userName": "Rohini Jayanthi",
+                "text": "have nothing bad to say",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "2.2.144",
+                "at": "2025-03-24T14:45:40",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "0a1c9c19-ed82-4513-b559-d2bea737285a",
+                "userName": "Evangeline Lim",
+                "text": "this game is so fun it has a practice mode on it and the quality is so good and the names match with the sounds and my favourite one was stereo madness and back on track it was so fun so much sometimes i rage but i still like it i recommend!! 🌺 :3",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "2.2.144",
+                "at": "2025-03-24T14:31:01",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "24089b0a-4f4c-48ef-aeb5-066710a06020",
+                "userName": "Bilal Hamza",
+                "text": "good",
+                "score": 5,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": null,
+                "at": "2025-03-24T14:18:18",
+                "replyContent": null,
+                "replyAt": ""
+            },
+            {
+                "id": "ad8f19f3-32ab-4d93-893f-72e00f4df3dd",
+                "userName": "American Ribs & Wings",
+                "text": "its good but sometimes it lags",
+                "score": 4,
+                "thumbsUpCount": 0,
+                "reviewCreatedVersion": "2.2.144",
+                "at": "2025-03-24T13:45:58",
+                "replyContent": null,
+                "replyAt": ""
+            }
+        ]
+    }
+]
